@@ -146,7 +146,7 @@ def get_weekly_stat(year, week, position, stat, season = 'regular'):
 
 	stat_df = stat_df[columns]
 	
-	return stat_df[:30]
+	return stat_df[:30]	
 
 	
 def create_team_agg_total(year, week = 0, season_type = 'Regular'):
@@ -196,7 +196,8 @@ def create_team_agg_total(year, week = 0, season_type = 'Regular'):
 	
 	return agg_play.head(n=32)
 	
-	
+def get_season_player(year, name, season = 'regular'):	
+	print 'gotsta make this'
 
 	#Carries
 	#Targets
@@ -224,6 +225,8 @@ print 'Top First Downs - RB\n', get_weekly_stat(2018, 3, 'RB', 'first_down', 'Pr
 
 
 print create_team_agg_total(2018, 3, 'Preseason')
+
+get_season_player(2017, 'name')
 
 
 
