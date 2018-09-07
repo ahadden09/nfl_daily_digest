@@ -194,7 +194,7 @@ def create_team_agg_total(year, week = 0, season_type = 'Regular'):
 	# order by values
 	# specify columns
 	
-	return agg_play.head(n=32)
+	return agg_play.head(n=32).style
 	
 def get_season_player(year, name, season = 'regular'):	
 	print 'gotsta make this'
